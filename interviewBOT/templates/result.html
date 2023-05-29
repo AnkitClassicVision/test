@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Result</title>
+</head>
+<body>
+<h1>Generated Result</h1>
+<pre>{{ result }}</pre>
+<form action="/generate_score" method="post">
+    <label for="resume_text">Paste resume text here REMOVE ALL NAMES AND IDENTRIFERS:</label><br>
+    <textarea name="resume_text" required></textarea><br>
+    <input type="hidden" name="result" value="{{ result }}">
+    <input type="submit" value="Generate Score">
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Position</title>
+</head>
+<body>
+    <h1>What position do you want to fill?</h1>
+    <form action="/position" method="post">
+        <input type="radio" name="position_type" value="new" required> New position not in the database<br>
+        <input type="radio" name="position_type" value="existing" required> (not functional) Existing position<br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

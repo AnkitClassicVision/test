@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Position</title>
+</head>
+<body>
+    <h1>New Position</h1>
+    <form action="/generate" method="post">
+        <label for="position">Position:</label>
+        <input type="text" name="position" required><br>
+        <label for="company_size">Company Size:</label>
+        <input type="text" name="company_size" required><br>
+        <label for="company_industry">Company Industry:</label>
+        <input type="text" name="company_industry" required><br>
+        <label for="company_description">Company Description:</label>
+        <textarea name="company_description" required></textarea><br>
+        <input type="submit" value="Generate">
+    </form>
+</body>
+</html>
